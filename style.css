@@ -71,6 +71,9 @@ body {
     grid-template-columns: 1fr 5fr;
 }
 .playlist-left {
+    position: absolute;
+    top: 100px;
+    bottom: 0px;
     background-color: #0f0f0f;
     display: flex;
     flex-direction: column;
