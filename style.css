@@ -69,11 +69,11 @@ body {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 5fr;
+    background-image: linear-gradient(90deg,rgba(67,206,162,0.7),rgba(24,90,157,0.7)), url("mira.jpg");
+    background-size: cover;
+    background-position-y: center;
 }
 .playlist-left {
-    position: absolute;
-    top: 100px;
-    bottom: 0px;
     background-color: #0f0f0f;
     display: flex;
     flex-direction: column;
@@ -114,10 +114,7 @@ body {
     }
 }
 #playlist-wp {
-    background-image: linear-gradient(90deg,rgba(67,206,162,0.7),rgba(24,90,157,0.7)), url("mira.jpg");
-    background-size: cover;
-    background-position-y: center;
-    background-repeat: no-repeat;
+    
 }
 #playlist-right {
     padding-bottom: 50px;
