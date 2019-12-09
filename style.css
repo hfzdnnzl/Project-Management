@@ -127,6 +127,7 @@ body {
     color: whitesmoke;
 }
 #playlist-right {
+    min-width: 600px;
     padding-bottom: 50px;
     display: flex;
     flex-direction: column;
@@ -141,30 +142,39 @@ body {
     color: whitesmoke;
 }
 #song, #label {
-    padding: 10px 0 10px 50px;
-    max-height: 20px;
+    margin: 10px 0px 10px 50px;
+    height: 20px;
     max-width: 800px;
     display: grid;
     grid-template-columns: 1fr 5fr 5fr 1fr 1fr;
     letter-spacing: 2px;
     font-family: 'Arial',sans-serif;
     font-weight: normal;
+    align-content: center;
     color: whitesmoke;
 }
-#link {
-    font-family: 'Arial',sans-serif;
-    font-weight: normal;
-    text-decoration: none;
-    color: whitesmoke;
+#play, #title, #artist {
+    display: flex;
+    align-items: center;
 }
-#link:hover {
+#link, #profile {
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #323232;
+}
+#link:hover, #profile:hover {
     animation-name: l-button;
-    animation-duration: 400ms;
+    animation-duration: 100ms;
     animation-fill-mode: forwards;   
 }
 @keyframes l-button {
     100% {
-        color: white;
-        font-weight: bold;
+        height: 34px;
+        width: 34px;
+        background-color: whitesmoke;
     }
 }
