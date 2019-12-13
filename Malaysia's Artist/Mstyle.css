@@ -1,0 +1,187 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+#main {
+    display: grid;
+    grid-template-rows: 100px auto;
+}
+#header-row {
+    background: linear-gradient(0deg,#141414,#323232);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.h-main {
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    margin: 0 30px 0 30px;
+    border-radius: 1em;
+    background: whitesmoke;
+    font-family: 'Arial',sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    color: #323232;
+}
+.h-side {
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    margin: 0 30px 0 30px;
+    border-radius: 1em;
+    font-family: 'Arial',sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    color: whitesmoke;
+}
+.h-side:hover {
+    animation-name: h-button;
+    animation-duration: 400ms;
+    animation-fill-mode: forwards;   
+}
+@keyframes h-button {
+    100% {
+        color: #323232;
+        background: whitesmoke;
+    }
+}
+#body-row {
+    padding: 0;
+    position: absolute;
+    top: 100px;
+    bottom: 0px;
+    width: 100%;
+    background-image: linear-gradient(90deg,rgba(67,206,162,0.7),rgba(24,90,157,0.7)), url("dance.jpg");
+    background-size: cover;
+}
+#body-music {
+    position: absolute;
+    top: 100px;
+    bottom: 0px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    background-image: linear-gradient(90deg,rgba(67,206,162,0.7),rgba(24,90,157,0.7)), url("mira.jpg");
+    background-size: cover;
+    background-position-y: center;
+}
+.playlist-left {
+    background-color: #0f0f0f;
+    display: flex;
+    flex-direction: column;
+}
+.playlist-left h4 {
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    color: whitesmoke;
+    letter-spacing: 5px;
+    font-family: 'Arial',sans-serif;
+    font-weight: normal;
+    text-align: left;
+}
+.playlist-left a {
+    padding: 20px 20px 20px 40px;
+    letter-spacing: 2px;
+    font-family: 'Arial',sans-serif;
+    list-style: none;
+    text-decoration: none;
+    color: whitesmoke;
+}
+#m-main {
+    background: whitesmoke;
+    color: #141414;
+    font-weight: bold;
+}
+#m-side:hover {
+    animation-name: m-button;
+    animation-duration: 400ms;
+    animation-fill-mode: forwards;   
+}
+@keyframes m-button {
+    100% {
+        color: #141414;
+        background: whitesmoke;
+        font-weight: bold;
+    }
+}
+#playlist-right {
+    min-width: 600px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    background-color: #141414;
+}
+#playlist-right h3 {
+    margin-left: 100px;
+    letter-spacing: 2px;
+    font-family: 'Arial',sans-serif;
+    font-weight: normal;
+    color: whitesmoke;
+}
+#artist {
+    margin: 0;
+    padding-top: 10px;
+    padding-left: 50px;
+    letter-spacing: 2px;
+    font-family: 'Arial',sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: whitesmoke;
+}
+#artist-name {
+    margin: 0;
+    padding-left: 50px;
+    padding-bottom: 30px;
+    letter-spacing: 2px;
+    font-family: 'Arial',sans-serif;
+    font-weight: bold;
+    font-size: 70px;
+    text-decoration: none;
+    color: whitesmoke;
+}
+#bio,#spotify {
+    margin: 0;
+    padding: 0px 70px 0px 70px;
+    letter-spacing: 2px;
+    font-family: 'Arial',sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: whitesmoke;
+}
+p {
+    padding: 0px 70px 0px 70px;
+    letter-spacing: 2px;
+    line-height: 30px;
+    font-family: 'Arial',sans-serif;
+    text-decoration: none;
+    color: whitesmoke;
+}
+#spotify-data {
+    padding: 0px 70px 0px 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+#data-box {
+    margin-top: 20px;
+    margin-right: 20px;
+}
+#data-box h1 {
+    margin: 0;
+    letter-spacing: 2px;
+    font-family: 'Arial',sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: whitesmoke;
+}
+#data-box h5 {
+    margin: 0;
+    letter-spacing: 2px;
+    font-family: 'Arial',sans-serif;
+    font-weight: normal;
+    text-decoration: none;
+    color: whitesmoke;
+}
