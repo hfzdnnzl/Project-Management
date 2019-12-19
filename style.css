@@ -146,7 +146,7 @@ body {
     height: 20px;
     max-width: 800px;
     display: grid;
-    grid-template-columns: 1fr 5fr 5fr 1fr 1fr;
+    grid-template-columns: 1fr 6fr 6fr 1fr 1fr 1fr;
     letter-spacing: 2px;
     font-family: 'Arial',sans-serif;
     font-weight: normal;
@@ -157,7 +157,7 @@ body {
     display: flex;
     align-items: center;
 }
-#link, #profile {
+#link, #profile, #lyric {
     height: 34px;
     width: 34px;
     border-radius: 50%;
@@ -166,7 +166,7 @@ body {
     align-items: center;
     background-color: #323232;
 }
-#link:hover, #profile:hover {
+#link:hover, #profile:hover, #lyric:hover {
     animation-name: l-button;
     animation-duration: 100ms;
     animation-fill-mode: forwards;   
